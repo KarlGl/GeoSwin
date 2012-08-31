@@ -1,0 +1,31 @@
+<h1>Geo Swin</h1>
+<small><%=version%></small>
+
+<%= render 'form' %>
+<p id='calc'>
+  -
+</p>
+<h3>HISTORY</h3>
+<table>
+  <tr>
+    <th>Long</th>
+    <th>Lat</th>
+    <th>Time Created</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @locations.each do |location| %>
+  <tr>
+    <td><%= location.long %></td>
+    <td><%= location.lat %></td>
+    <td><small><%= location.created_at.ctime %></small></td>
+<!--     <td><%= link_to 'Show', location %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to 'Destroy', location, confirm: 'Are you sure?', method: :delete %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
