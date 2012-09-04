@@ -6,16 +6,14 @@
   -
 </p>
 <h3>HISTORY</h3>
-<table>
+<table class="table table-striped table-bordered">
   <tr>
     <th>Long</th>
     <th>Lat</th>
     <th>Time Created</th>
-    <th></th>
-    <th></th>
   </tr>
 
-<% @locations.each do |location| %>
+<% @locations.reverse.each do |location| %>
   <tr>
     <td><%= location.long %></td>
     <td><%= location.lat %></td>

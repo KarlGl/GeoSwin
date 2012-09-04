@@ -12,14 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :long %><br />
+    <br/>
+    <%= f.label :long %>
     <%= f.text_field :long %>
   </div>
   <div class="field">
-    <%= f.label :lat %><br />
+    <%= f.label :lat %>
     <%= f.text_field :lat %>
   </div>
   <div class="actions">
-    <%= f.submit("Calculate Distance!") %>
+    <button type ="submit" class="btn btn-primary">Calculate Distance!</button>
   </div>
 <% end %>
