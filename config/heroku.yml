@@ -4,7 +4,7 @@ apps:
   #   production: awesomeapp
   # would create the RACK_ENV=production
   # and deploy to http://awesomeapp.heroku.com
-  production: awesomeapp
+  production: fathomless-bastion-7871
   staging: awesomeapp-staging
   legacy: awesomeapp-legacy
 
@@ -38,9 +38,8 @@ collaborators:
 
 domains:
   production:
-    - "awesomeapp.com"
-    - "www.awesomeapp.com"
-
+    - "fathomless-bastion-7871.herokuapp.com"
+    - "www.fathomless-bastion-7871.herokuapp.com"
 addons:
   all:
     - custom_domains:basic
