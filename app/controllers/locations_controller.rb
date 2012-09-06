@@ -30,7 +30,7 @@ class LocationsController < ApplicationController
     @location = Location.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { redirect_to locations_url }
       format.json { render json: @location }
     end
   end
@@ -46,10 +46,10 @@ class LocationsController < ApplicationController
     @location = Location.new(params[:location])
     @slat=@@Lat
     @slong=@@Long
-
     respond_to do |format|
       if @location.save
-        format.js
+          # format.html
+          format.js 
       end
     end
   end
