@@ -48,6 +48,7 @@ class LocationsController < ApplicationController
     @slong=@@Long
     respond_to do |format|
       if @location.save
+          @location.reload
           # format.html
           format.js 
       end
